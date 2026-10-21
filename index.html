@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17251b">
+  <meta name="description" content="Vyanjan — ताज़ा स्वाद, आपकी पसंद के व्यंजन। मेन्यू देखें और WhatsApp पर ऑर्डर करें।">
+  <title>Vyanjan | स्वाद जो याद रहे</title>
+  <link rel="icon" type="image/png" href="images/vyanjan-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="The Vyanjan home"><img class="brand-logo" src="images/vyanjan-logo.png" alt="The Vyanjan — Indian Meal Box & Catering"></a>
+    <button class="menu-toggle" aria-label="मेन्यू खोलें" aria-expanded="false">☰</button>
+    <nav class="nav-links"><a href="#menu" data-i18n="navMenu">मेन्यू</a><a href="#about" data-i18n="navAbout">हमारे बारे में</a><a href="#gallery" data-i18n="navGallery">तस्वीरें</a><a class="nav-order" href="#contact" data-i18n="navOrder">ऑर्डर करें ↗</a><button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">English</button></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> ताज़ा बना • दिल से परोसा</div>
+        <h1>हर निवाले में<br><em>कुछ खास।</em></h1>
+        <p>चटपटे स्वाद से लेकर पसंदीदा क्लासिक्स तक—आपके लिए प्यार से तैयार किए गए व्यंजन।</p>
+        <div class="hero-actions"><a class="button button-primary" href="#menu">मेन्यू देखें <b>↓</b></a><a class="text-link" href="#about">हमारी कहानी <span>↗</span></a></div>
+        <div class="hero-note"><span class="note-icon">✦</span><span>आपका अगला पसंदीदा स्वाद<br><strong>यहीं मिल सकता है।</strong></span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="images/IMG_20241027_221213077_HDR.jpg" alt="क्रीमी दाल का व्यंजन" fetchpriority="high">
+        <div class="photo-tag"><span>आज का स्वाद</span><strong>शेफ स्पेशल</strong></div>
+        <div class="hero-stamp">MADE<br>WITH<br>♡</div>
+      </div>
+      <div class="hero-bottom"><span>अच्छा खाना, अच्छा मूड</span><span>↓ स्क्रोल करके मेन्यू देखें</span><span>ताज़गी • स्वाद • अपनापन</span></div>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading"><div><div class="eyebrow"><span></span> हमारा मेन्यू</div><h2>कुछ स्वादिष्ट<br><em>चुनिए।</em></h2></div><p>हमारे पुराने पसंदीदा व्यंजनों की तस्वीरें। आइटम के नाम और कीमत आप <code>menu.js</code> फ़ाइल में बदल सकते हैं।</p></div>
+      <div class="filters" id="filters" aria-label="मेन्यू श्रेणियां"></div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <p class="price-note">कीमत और उपलब्धता की जानकारी के लिए सीधे संपर्क करें।</p>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-inner"><div class="about-art"><img src="images/IMG_20240727_151335243_HDR.jpg" alt="चटनी के साथ स्नैक" loading="lazy"><span class="round-seal">ताज़ा<br>और<br>दिल से</span></div><div class="about-copy"><div class="eyebrow"><span></span> हमारी छोटी सी कहानी</div><h2>खाने में स्वाद,<br><em>परोसने में प्यार।</em></h2><p>Vyanjan में हर प्लेट को खास बनाने की कोशिश है। यहाँ आपको चटपटे स्नैक्स, चाट, ग्रिल्ड स्वाद और मनपसंद करी—सब एक ही जगह मिलेंगे।</p><p class="muted">यह परिचय नमूना है—इसे अपनी दुकान, शहर और खासियत के हिसाब से बदलें।</p><a class="text-link" href="#contact">हमसे बात करें <span>↗</span></a></div></div></section>
+
+    <section class="gallery-section section-wrap" id="gallery"><div class="section-heading compact"><div><div class="eyebrow"><span></span> स्वाद की झलक</div><h2>पहले <em>देखिए।</em></h2></div><p>आपकी भेजी हुई सभी 19 तस्वीरें इस वेबसाइट में शामिल हैं।</p></div><div class="gallery-strip" id="galleryStrip"></div></section>
+
+    <section class="contact-section" id="contact"><div class="contact-card"><div class="eyebrow"><span></span> ऑर्डर और संपर्क</div><h2>भूख लगी है?<br><em>बात करते हैं।</em></h2><p>WhatsApp पर ऑर्डर करें या हमें कॉल करें।</p><a class="button button-light" id="orderButton" href="#">WhatsApp पर ऑर्डर करें <b>↗</b></a><a class="phone-link" id="phoneLink" href="tel:8076629789">कॉल करें: 8076629789</a><div class="contact-meta"><span>ताज़ा • स्वादिष्ट • दिल से</span><span id="locationText">देसू वाली गली, महिपालपुर</span></div></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home" aria-label="The Vyanjan home"><img class="brand-logo" src="images/vyanjan-logo.png" alt="The Vyanjan — Indian Meal Box & Catering"></a><span>अच्छे स्वाद की अपनी कहानी।</span><a href="#home">ऊपर जाएँ ↑</a></footer>
+  <script src="menu.js"></script><script src="script.js"></script>
+</body>
+</html>
